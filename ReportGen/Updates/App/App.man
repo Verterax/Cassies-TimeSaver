@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProgName>Cassie's TimeSaver</ProgName>
+  <Vers>0.05300000000000004</Vers>
+  <URL>/ct/update/App/</URL>
+  <Packages>
+    <Package>
+      <PID>0</PID>
+      <Name>Executable</Name>
+      <Vers>1.0049999999999995</Vers>
+      <SaveName>Executable</SaveName>
+      <Contents>
+        <Root>C:\Users\Christopher\Documents\Visual Studio 2010\Projects\ReportGen\ReportGen\bin\Debug\</Root>
+        <Files>
+          <FileStats>
+            <FileName>new_CTUpdater.exe</FileName>
+            <DateModified>2014-05-15T08:31:43.2746-07:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>Cassies TimeSaver.exe</FileName>
+            <DateModified>2014-05-15T08:45:15.3576-07:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>new_CTUpdater.exe</FileName>
+            <DateModified>2014-05-15T08:31:43.2746-07:00</DateModified>
+          </FileStats>
+        </Files>
+        <Dirs />
+      </Contents>
+    </Package>
+    <Package>
+      <PID>1</PID>
+      <Name>Libraries</Name>
+      <Vers>1</Vers>
+      <SaveName>Libraries</SaveName>
+      <Contents>
+        <Root>C:\Users\Christopher\Documents\Visual Studio 2010\Projects\ReportGen\ReportGen\bin\Debug\</Root>
+        <Files>
+          <FileStats>
+            <FileName>Code7248.word_reader.dll</FileName>
+            <DateModified>2014-01-13T02:24:54.626-08:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>DocX.dll</FileName>
+            <DateModified>2014-03-25T05:04:10.7234-07:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>Ionic.Zip.dll</FileName>
+            <DateModified>2010-02-25T21:29:00-08:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>itextsharp.dll</FileName>
+            <DateModified>2006-02-22T20:01:50-08:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>log4net.dll</FileName>
+            <DateModified>2013-11-18T04:51:44-08:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>SharpZipLib.dll</FileName>
+            <DateModified>2006-02-22T19:45:32-08:00</DateModified>
+          </FileStats>
+        </Files>
+        <Dirs />
+      </Contents>
+    </Package>
+    <Package>
+      <PID>2</PID>
+      <Name>Images</Name>
+      <Vers>1</Vers>
+      <SaveName>Images</SaveName>
+      <Contents>
+        <Root>C:\Users\Christopher\Documents\Visual Studio 2010\Projects\ReportGen\ReportGen\bin\Debug\Images\</Root>
+        <Files>
+          <FileStats>
+            <FileName>broken_heart.ico</FileName>
+            <DateModified>2014-04-16T13:54:41.509-07:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>input_book.ico</FileName>
+            <DateModified>2014-04-15T12:40:10.1134-07:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>input_page.ico</FileName>
+            <DateModified>2014-04-15T12:36:45.5894-07:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>pink_heart.ico</FileName>
+            <DateModified>2014-04-15T14:03:28.7404-07:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>upgrade_heart.ico</FileName>
+            <DateModified>2014-05-08T04:10:34.67-07:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>words_doc.ico</FileName>
+            <DateModified>2014-04-13T06:49:14.9274-07:00</DateModified>
+          </FileStats>
+          <FileStats>
+            <FileName>Space Cat.jpg</FileName>
+            <DateModified>2014-04-15T03:58:29.9744-07:00</DateModified>
+          </FileStats>
+        </Files>
+        <Dirs />
+      </Contents>
+    </Package>
+    <Package>
+      <PID>3</PID>
+      <Name>Documentation</Name>
+      <Vers>1</Vers>
+      <SaveName>Documentation</SaveName>
+      <Contents>
+        <Root>C:\Users\Christopher\Documents\Visual Studio 2010\Projects\ReportGen\ReportGen\bin\Debug\Documentation\</Root>
+        <Files>
+          <FileStats>
+            <FileName>Welcome to CT.docx</FileName>
+            <DateModified>2014-05-12T11:33:18.842-07:00</DateModified>
+          </FileStats>
+        </Files>
+        <Dirs />
+      </Contents>
+    </Package>
+  </Packages>
+</Manifest>

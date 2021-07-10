@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06FADA8B-F8AC-4425-A52B-4546DBCF3C90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReportGen</RootNamespace>
+    <AssemblyName>Cassies TimeSaver</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Cassie%27s Timesaver</ProductName>
+    <PublisherName>Axiom Computing</PublisherName>
+    <SuiteName>Cassie%27s Timesaver</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pink_heart.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ReportGen.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Code7248.word_reader">
+      <HintPath>Libraries\Code7248.word_reader.dll</HintPath>
+    </Reference>
+    <Reference Include="DocX">
+      <HintPath>Libraries\DocX.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>Libraries\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>Libraries\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BetaHelper.cs" />
+    <Compile Include="Data Structures\ArgStructs\DocGenArgs.cs" />
+    <Compile Include="Data Structures\DocNav.cs" />
+    <Compile Include="Data Structures\Fields.cs" />
+    <Compile Include="Data Structures\Logic\FFBook.cs" />
+    <Compile Include="Data Structures\Logic\Flat Logic\FlatAction.cs" />
+    <Compile Include="Data Structures\Logic\Flat Logic\FlatBranch.cs" />
+    <Compile Include="Data Structures\Logic\Flat Logic\FlatExprs.cs" />
+    <Compile Include="Data Structures\Logic\Flat Logic\FlatIf.cs" />
+    <Compile Include="Data Structures\Logic\Flat Logic\FlatFormsFuncs.cs" />
+    <Compile Include="Data Structures\Logic\FormAndFuncs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data Structures\Logic\Action.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data Structures\Logic\Expression.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data Structures\Logic\Flat Logic\FlatButton.cs" />
+    <Compile Include="Data Structures\Logic\Flat Logic\FlatBook.cs" />
+    <Compile Include="Data Structures\Logic\Flat Logic\FlatRegexField.cs" />
+    <Compile Include="Data Structures\Logic\If.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data Structures\Logic\InfixCalc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Structures\Logic\LogicBranch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data Structures\Logic\LogicButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data Structures\Logic\RPNCalc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Update\WebData.cs" />
+    <Compile Include="Update\Updates.cs" />
+    <Compile Include="Forms\ExprsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExprsEdit.Designer.cs">
+      <DependentUpon>ExprsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ActionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ActionEdit.Designer.cs">
+      <DependentUpon>ActionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="Forms\FadeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocReader.cs" />
+    <Compile Include="Data Structures\Logic\Flat Logic\PropClasses.cs" />
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\RegisteredFileType.cs" />
+    <Compile Include="Helper\RubberbandRects.cs" />
+    <Compile Include="License\LicReader.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocGen.cs" />
+    <Compile Include="Forms\Page Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Page Designer.Designer.cs">
+      <DependentUpon>Page Designer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update\Manifest.cs" />
+    <Compile Include="Update\UpdateManager.cs" />
+    <EmbeddedResource Include="Forms\ExprsEdit.resx">
+      <DependentUpon>ExprsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ActionEdit.resx">
+      <DependentUpon>ActionEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FadeForm.resx">
+      <DependentUpon>FadeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Page Designer.resx">
+      <DependentUpon>Page Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\emptyFolder_icon.jpg" />
+    <EmbeddedResource Include="Images\file_Icon.png" />
+    <EmbeddedResource Include="Images\docx_icon.png" />
+    <EmbeddedResource Include="Images\page_icon1.png" />
+    <EmbeddedResource Include="Images\col_icon.png" />
+    <EmbeddedResource Include="Images\col_icon1.png" />
+    <EmbeddedResource Include="Images\downArrow_icon.png" />
+    <EmbeddedResource Include="Images\rulerCompass_icon.png" />
+    <EmbeddedResource Include="Images\docGen_icon.png" />
+    <EmbeddedResource Include="Images\newBook_icon.png" />
+    <EmbeddedResource Include="Images\exit_icon.png" />
+    <EmbeddedResource Include="Images\openFile_Icon.png" />
+    <EmbeddedResource Include="Images\save_icon.png" />
+    <EmbeddedResource Include="Images\selectDoc_icon.png" />
+    <EmbeddedResource Include="Images\downArrowBlue_icon.png" />
+    <Content Include="input_book.ico" />
+    <Content Include="input_page.ico" />
+    <Content Include="pink_heart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".bok">
+      <Visible>False</Visible>
+      <Description>Input Book</Description>
+      <Progid>CT.bok.1</Progid>
+      <DefaultIcon>input_book.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".pag">
+      <Visible>False</Visible>
+      <Description>Input Page</Description>
+      <Progid>CT.pag.1</Progid>
+      <DefaultIcon>input_page.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Libraries\" />
+    <Folder Include="Misc\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

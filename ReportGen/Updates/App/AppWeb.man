@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<WebManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Vers>0.05300000000000004</Vers>
+  <Updated>2014-05-15T08:45:15.3576-07:00</Updated>
+  <URL>/ct/update/App/</URL>
+  <Packages>
+    <WebPackage>
+      <PID>0</PID>
+      <Vers>1.0049999999999995</Vers>
+      <Updated>2014-05-15T08:45:15.3576-07:00</Updated>
+      <Name>Executable</Name>
+    </WebPackage>
+    <WebPackage>
+      <PID>1</PID>
+      <Vers>1</Vers>
+      <Updated>2014-03-25T05:04:10.7234-07:00</Updated>
+      <Name>Libraries</Name>
+    </WebPackage>
+    <WebPackage>
+      <PID>2</PID>
+      <Vers>1</Vers>
+      <Updated>2014-05-08T04:10:34.67-07:00</Updated>
+      <Name>Images</Name>
+    </WebPackage>
+    <WebPackage>
+      <PID>3</PID>
+      <Vers>1</Vers>
+      <Updated>2014-05-12T11:33:18.842-07:00</Updated>
+      <Name>Documentation</Name>
+    </WebPackage>
+  </Packages>
+</WebManifest>

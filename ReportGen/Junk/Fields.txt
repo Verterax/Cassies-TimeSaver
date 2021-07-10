@@ -1,0 +1,46 @@
+DB Fields:
+ID:
+Name:
+DOB:
+Gender:
+Grade:
+Parent Names:
+Address:
+City:
+State:
+Phone:
+Test Dates:
+
+Basic Reading:
+
+
+
+
+
+
+Document Fields.
+Age:
+					STD:    Percentile:
+Total Reading 				129	97
+		
+Basic Reading				129	97
+Word Reading 				129	97
+Pseudoword Decoding			120	91
+		
+Reading Comprehension and Fluency	123	94
+Reading Comprehension			112	79
+Oral Reading Fluency			127	96
+		
+Mathematics				112	79
+Numerical Operations 			115	84
+Math Problem Solving 			106	66
+					
+Math Fluency				109	73
+Math Fluency-Addition			114	82
+Math Fluency-Subtraction		97	42
+Math Fluency-Multiplication		114	82
+		
+Written Expression			129	97
+Spelling				145	99.9
+Sentence Composition			129	97
+Essay Composition			92	30
